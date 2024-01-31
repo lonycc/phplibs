@@ -1,0 +1,22 @@
+{
+    "name": "tony/mixed",
+    "description": "Mixed Libs for work",
+    "keywords": ["RSA", "AES", "TreeNode", "LinkedNode"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tony\\Mixed\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tony",
+            "email": "xcc@dmm.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    }
+}
