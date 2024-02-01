@@ -22,9 +22,9 @@ class AES
     /**
      * 解密
      */
-    public function decrypt(string $str): string
+    public function decrypt(string $str, string $algo = 'AES-128-CBC'): string
     {
-        $decrypted = openssl_decrypt(base64_decode($str), 'aes-128-cbc', $this->aes_key, OPENSSL_RAW_DATA, $this->aes_iv);
+        $decrypted = openssl_decrypt(base64_decode($str), $algo, $this->aes_key, OPENSSL_RAW_DATA, $this->aes_iv);
 
         return $decrypted;
     }
@@ -32,9 +32,9 @@ class AES
     /**
      * 解密
      */
-    public function encrypt(string $plain_text): string
+    public function encrypt(string $plain_text, string $algo = 'AES-128-CBC'): string
     {
-        $encrypted_data = openssl_encrypt($plain_text, 'aes-128-cbc', $this->aes_key, OPENSSL_RAW_DATA, $this->aes_iv);
+        $encrypted_data = openssl_encrypt($plain_text, $algo, $this->aes_key, OPENSSL_RAW_DATA, $this->aes_iv);
 
         return base64_encode($encrypted_data);
     }

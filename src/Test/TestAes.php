@@ -16,7 +16,7 @@ class TestAes
     public function testAesDecrypt()
     {
         $aes = new AES();
-        $decrypted = $aes->decrypt("");
+        $decrypted = $aes->decrypt("nfRFvHeMtuS6qcqQNDmjbQ==");
         assert($decrypted == "hello world", "解密结果应该是hello world");
     }
 }

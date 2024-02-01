@@ -3,6 +3,7 @@
     "description": "Mixed Libs for work",
     "keywords": ["RSA", "AES", "TreeNode", "LinkedNode"],
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
