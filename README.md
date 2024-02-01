@@ -66,8 +66,8 @@ git push -u origin main
 ```
 use Tony\Mixed\Lib\AES;
 
-$key = bin2hex(random_bytes(16));
-$iv = bin2hex(random_bytes(16));
+$key = bin2hex(random_bytes(8));
+$iv = bin2hex(random_bytes(8));
 $msg = 'this is your message';
 
 $aes = new AES($key, $iv);
