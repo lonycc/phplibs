@@ -1,5 +1,5 @@
 {
-    "name": "tooooony/mixed",
+    "name": "tooooony/aes_rsa_tree_linked_node",
     "description": "Mixed Libs for work",
     "keywords": ["RSA", "AES", "TreeNode", "LinkedNode"],
     "type": "library",
