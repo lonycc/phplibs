@@ -16,6 +16,7 @@
             "email": "xcc@dmm.net"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.2 | ^8.0"
     }
